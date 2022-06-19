@@ -12,7 +12,7 @@ public class Contact {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int index;
+	private int contId;
 	
 	private String name;
 	
@@ -20,12 +20,14 @@ public class Contact {
 	
 	private long phone;
 
-	public int getIndex() {
-		return index;
+
+
+	public int getContId() {
+		return contId;
 	}
 
-	public void setIndex(int index) {
-		this.index = index;
+	public void setContId(int contId) {
+		this.contId = contId;
 	}
 
 	public String getName() {
@@ -54,8 +56,9 @@ public class Contact {
 
 	@Override
 	public String toString() {
-		return "Contact [index=" + index + ", name=" + name + ", email=" + email + ", phone=" + phone + "]";
+		return "Contact [contId=" + contId + ", name=" + name + ", email=" + email + ", phone=" + phone + "]";
 	}
+
 	
 	
 	
